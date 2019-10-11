@@ -1,0 +1,280 @@
+//Миксины. Временно тут
+@mixin text-upper {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+
+
+
+html, body{
+    padding: 0;
+    margin: 0;
+
+}
+
+
+.header{
+    height: 1046px;
+    background-image: url(../img/header-background@x1.png);
+    background-size: cover;
+    background-position: center 0;
+}
+
+.header__wrapper{
+    max-width: 1140px;
+    height: 100%;
+
+    margin-right: auto;
+    margin-left: auto;
+
+    font-family: 'ProxomaNova-Bold', sans-serif;
+}
+
+@media (min-resolution: 1.5dppx){
+    .header__wrapper{
+        background-image: url(../img/header-background@x2.png);
+    }
+}
+
+.container__top{
+    margin-bottom: 241px;
+    padding-top: 33px;
+}
+
+.header__nav_toggle {
+    position: absolute;
+    top: 0px;
+    left: 17px;
+    z-index: 2;
+  
+    display: block;
+    width: 33px;
+    height: 22px;
+  
+    background-color: rgba(255,255,255,0);
+    border: none;
+  
+    cursor: pointer;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+    position: absolute;
+  
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+  
+    white-space: nowrap;
+  
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.header__nav_closed .header__nav_toggle::before {
+    content: '';
+  
+    position: absolute;
+    top: 3px;
+    left: 2px;
+  
+    width: 33px;
+    height: 1px;
+  
+    background-color: #bea67c;
+    box-shadow: 0 11px 0 0 #bea67c, 0 22px 0 0 #bea67c;
+  }
+//Временно тут
+a{
+    text-decoration: none;
+}
+//временно тут - конец
+
+
+.header__link{
+    @include text-upper;
+    opacity: 0.5;
+
+    font-size: 15px;
+    line-height: 27px;
+}
+
+.header__logo{
+    display: block;
+
+    @include text-upper;
+    font-size: 36px;
+    letter-spacing: 7px;
+
+    margin-left: 40px;
+    margin-top: -5px;
+}
+
+.container__middle{
+    height: 600px;
+    white-space: nowrap;
+}
+
+
+
+.logo-line{
+    width: 61px;
+    height: 4px;
+
+    border: none;
+    background-color: #bea67c;
+
+
+    position: absolute;
+    left: 97px;
+    top: 5px;
+}
+
+.header__link_menu{
+    margin-left: 50px;
+}
+
+.header__page-number,
+.header__point{
+    font-size: 52px;
+    color: #bea67c;
+    font-weight: bold;
+    letter-spacing: 5px;
+
+    margin-right: 60px;
+}
+
+.decor-line{
+    height: 4px;
+    width: 51px;
+    border: none;
+    background-color: #bea67c;
+}
+
+.header__point{
+    font-size: 35px;
+    margin-right: 35px;
+
+    color: #303030;
+}
+
+.header__page-number + .header__point{
+    color: #bea67c;
+}
+
+.decor-rotate{
+    transform: rotate(90deg);
+}
+
+.container__middle_pages{
+    margin-top: 175px;
+}
+
+.container__middle_pages .decor-line{
+    position: relative;
+    right: 240px;
+    top: 40px;
+}
+
+.header__col-flexbox{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.header__name-company{
+    @include text-upper;
+    font-size: 80px;
+    color: #bea67c;
+    letter-spacing: 12px;
+    margin: 0;
+
+    margin-bottom: 55px;
+}
+
+.container__middle_company{
+    margin-left: -50px;
+}
+
+.container__middle_company button img{
+    margin-left: 10px;
+    margin-top: 2px;
+    position: absolute;
+}
+
+.img-mouse{
+    margin-top: 68px;
+}
+
+.img-arrow{
+    margin-left: 4px;
+    margin-top: 23px;
+}
+
+.header__scroll_text{
+    @include text-upper;
+    font-size: 14px;
+    color: #ffffff;
+    opacity: 0.1;
+    letter-spacing: 5px;
+
+    margin-top: 80px;
+    margin-left: -35px;
+}
+
+.header__decor_text{
+    @include text-upper;
+    letter-spacing: 7px;
+    color: #bea67c;
+    opacity: 0.2;
+}
+
+.container__decor .decor-line{
+    position: absolute;
+    left: 705px;
+    bottom: 700px;
+}
+
+.container__decor{
+    margin-top: -215px;
+    margin-left: -230px;
+}
+
+select{
+    @include text-upper;
+    width: 36px;
+
+    -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+    background-image: url(../img/arrow-lang.png);
+    background-color: rgba(255,255,255,0);
+    background-repeat: no-repeat;
+    background-position: right center;
+    border: none;
+
+    padding: 0;
+    margin-left: 20px;
+}
+
+.header__link_about{
+    margin-left: 0px;
+}
+
+.header__link_products{
+    margin-left: -40px;
+}
+
+.header__link_home{
+    margin-left: 40px;
+}
+
+.share{
+    position: absolute;
+    top: 700px;
+    right: -310px;
+}

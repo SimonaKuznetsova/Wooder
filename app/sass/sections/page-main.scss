@@ -1,0 +1,25 @@
+.main__wrapper{
+    max-width: 1140px;
+    height: 100%;
+
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.main__top{
+    margin-top: 90px;
+    justify-content: space-between;
+}
+
+.main__left{
+    max-width: 530px;
+}
+
+.main__right{
+    justify-content: flex-end;
+}
+
+.main__img img{
+    width: 540px;
+    height: auto;
+}
