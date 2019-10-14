@@ -1,5 +1,7 @@
-@import 'node_modules/bootstrap/scss/bootstrap-grid';
-@import 'sections/tester';
-@import 'sections/fonts';
-@import 'sections/buttons';
-@import 'sections/page-main';
+@import "node_modules/bootstrap/scss/bootstrap-grid";
+
+@import "base/reset";
+@import "sections/tester";
+@import "sections/fonts";
+@import "sections/buttons";
+@import "sections/page-main";
