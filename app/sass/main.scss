@@ -1,7 +1,19 @@
 @import "node_modules/bootstrap/scss/bootstrap-grid";
-
 @import "base/reset";
-@import "sections/tester";
+@import "sections/mixins";
+@import "sections/variables";
+@import "sections/general";
 @import "sections/fonts";
 @import "sections/buttons";
+@import "node_modules/hamburgers/dist/hamburgers";
+
+
+
+//Блоки
+@import "sections/header";
 @import "sections/page-main";
+@import "sections/advantages";
+
+
+//_media
+@import "base/_media";

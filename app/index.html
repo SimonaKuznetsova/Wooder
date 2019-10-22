@@ -11,23 +11,32 @@
     <header class="header">
       <div class="container-fluid container_mb240px container_pt30px">
         <div class="row justify-content-between align-items-center">
-          <div class="col-3 col-xl-4">
-            <!-- <div class="header__nav header__nav_closed header__nav_no-js"> -->
-            <button class="header__menu-button">
-              <!-- <span class="visually-hidden">Открыть меню</span> -->
-              <a href="#" class="header__link header__link_ml50px">Menu</a>
-            </button>
-            <!-- </div> -->
+
+          <div class="col-3 col-sm-4 col-md-4 col-lg-3  col-xl-4 parent_relative">
+              <button href='#my-menu' class="hamburger hamburger--collapse" type="button">
+                <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+                <a href="#" class="header__link header__link_ml12px">Menu</a>
+              </button>
+
+              <nav class='header__mnu'>
+                <ul>
+                  <a href='#'><li class='mnu__item'>Home</li></a>
+                  <a href='#'><li class='mnu__item'>Products</li></a>
+                  <a href='#'><li class='mnu__item'>About</li></a>
+                  <a href='#'><li class='mnu__item'>Info</li></a>
+                  <a href='#'><li class='mnu__item'>Gallery</li></a>
+                </ul>
+              </nav>
           </div>
 
-          <div class="col-3">
+          <div class="col-5 col-sm-4 col-md-4 col-lg-2 offset-lg-1 col-xl-3 offset-xl-0">
             <div class="header__logo">
               <span class="header__logo-text">Wooder</span>
               <hr class="header__logo-line" />
             </div>
           </div>
 
-          <div class="col-4 col-xl-3">
+          <div class="d-none d-lg-block offset-lg-1 col-lg-3 offset-xl-0 col-xl-3">
             <ul class="header__nav">
               <li class="header__nav-item">
                 <a href="#" class="header__link">Home</a>
@@ -41,7 +50,7 @@
             </ul>
           </div>
 
-          <div class="col-2">
+          <div class="col-4 col-sm-4 col-md-4 col-lg-2">
             <div class="header__info">
               <a href="#">
                 <img src="img/info.svg" />
@@ -57,60 +66,54 @@
         </div>
       </div>
 
-      <div class="container-fluid">
+      <div class="container-fluid pt_200px pt_80px">
         <div class="row">
-          <div class="col-3 col-xl-4">
-            <div class="decor-rotate header__slides-nav">
+          <div class="col-3 col-sm-4 col-md-1 offset-md-1 col-lg-2 offset-lg-1 col-xl-1 offset-xl-2">
+
+            <div class="header__slides-nav">
               <hr class="decor-line" />
               <span class="header__page-number">01</span>
-              <span class="header__point">&bull;</span>
+              <span class="header__point header__point_first">&bull;</span>
               <span class="header__point">&bull;</span>
               <span class="header__point">&bull;</span>
               <span class="header__point">&bull;</span>
             </div>
           </div>
 
-          <div class="col-6 col-xl-5">
+
+          <div class="col-4 col-sm-4 col-md-5 offset-md-2 offset-lg-1 col-lg-5 col-xl-5">
             <h1 class="header__title">Wooder</h1>
             <button
               type="button"
-              class="button align-items-center justify-content-center"
+              class="button header_button align-items-center justify-content-center"
             >
               Learn more
-              <img src="img/button-arrow.png" />
             </button>
 
-            <div class="header__scroll header__col-flexbox">
-              <img
-                src="img/mouse.svg"
-                width="20"
-                height="30"
-                class="img-mouse"
-              />
+            <div class="header__scroll">
+              <img src="img/mouse.svg" width="20" height="30" class="img-mouse"/>
               <img src="img/arrow-mouse.png" class="img-arrow" />
-              <span class="header__scroll_text decor-rotate">Scroll</span>
+              <span class="header__scroll_text">Scroll</span>
             </div>
           </div>
 
-          <div class="col-3">
-            <div class="decor-rotate align-items-center">
+          <div class="d-none d-sm-block col-sm-4 col-md-2 col-xl-3 col-lg-2">
+            <div class="header__decor align-items-center">
               <span class="header__decor_text">Furniture & Decor</span>
+              <!--<img class="share-icon" src="img/share.svg" />
+              <hr class="decor-line" />-->
             </div>
           </div>
-
-          <!-- <div class="col-1">
-            <img class="share" src="img/share.svg" />
-          </div> -->
         </div>
       </div>
     </header>
 
-    <main class="main">
-      <div class="main__wrapper">
-        <div class="container">
-          <div class="row main__top">
-            <div class="col-5 main__left">
-              <hr class="main__h4-line" />
+
+    <main class='main'>
+      <div class="container">
+        <div class="row main__first align-items-center">
+          <div class="col-12 col-sm-6 offset-sm-1 col-md-5 offset-md-1 col-lg-4 offset-lg-2 col-xl-4 offset-xl-2 main__text">
+              <hr class="main__title-line" />
 
               <h4 class="main__title">Furniture</h4>
 
@@ -122,25 +125,89 @@
                 reclaimed barnwood
               </p>
 
-              <a href="#" class="main__learn-more"
-                >Learn more <img src="" alt="main__arrow"
-              /></a>
+              <a href="#" class="main__learn-more"><span>Learn more</span> <img src='img/button-arrow-gold.svg' width='20px'></a>
 
               <hr class="main__more-line" />
-            </div>
+          </div>
 
-            <div class="col-7 main__right">
-              <pictute class="main__img">
-                <source
-                  media="(min-width: 768px)"
-                  srcset="img/furniture@x1.png 1x, img/furniture@x2.png 2x"
-                />
-                <img src="img/furniture@x1.png" alt="Furniture" />
-              </pictute>
-            </div>
+          <div class="col-12 col-sm-5 col-md-6 col-lg-6 col-xl-6 main__picture">
+              <img src="img/furniture@x1.png" alt="Furniture" class='main__img' />
+          </div>
+        </div>
+
+        <div class="row main__second align-items-center">
+          <div class="col-12 order-2 col-sm-5 order-sm-1 col-md-6 col-lg-6 col-xl-6 main__picture">
+            <img src="img/decor@x1.png" alt="decor" class='main__img' />
+          </div>
+          <div class="col-12 order-1 col-sm-6 order-sm-2 col-md-5  col-lg-4 offset-lg-0 col-xl-4 offset-xl-0 main__text">
+            <h4 class="main__title">Decor</h4>
+
+            <hr class="main__title-line" />
+
+            <p class="main__p">
+                We make all types of wooden decor as per design given by Architect,Interior designer, contractor which is suitable
+            </p>
+
+            <hr class="main__p-line" />
+
+            <a href="#" class="main__learn-more"><span>Learn more</span> <img src='img/button-arrow-gold.svg' width='20px'></a>
+
+            <hr class="main__more-line" />
           </div>
         </div>
       </div>
     </main>
+
+    <section class='advantages'>
+      <div class="container pt_100px pt_50px pt_30px">
+        <div class="row justify-content-center">
+          <div class="col-xl-7 adv__centered">
+            <h4>Wooder - is quality</h4>
+          </div>
+
+          <div class="col-xl-12 adv__centered">
+            <hr class='advantages__title-line'>
+          </div>
+
+          <div class="col-9 col-sm-10 col-md-8 col-lg-6 col-xl-6 adv__centered">
+            <p class='advantages__p'>
+                We create unique design objects made of rare wood, specially under the order. Look at the short video about our work.
+            </p>
+          </div>
+        </div>
+
+      <div class="row pt_50px pt_20px justify-content-center">
+        <div class="col-sm-4 col-md-4 col-lg-3 col-xl-3 adv__centered mobile_row">
+          <div class="adv__container">
+            <div class="adv__wrapper">
+              <img src="img/adv_1.jpg" alt="" class="adv__img adv__img_1">
+            </div>
+          </div>
+          <hr class='adv__video-line'>
+          <span class="adv__video-text">Innovative Design</span>
+        </div>
+        <div class="col-sm-4 col-md-4 col-lg-3 col-xl-3 adv__centered mobile_row">
+          <div class="adv__container">
+            <div class="adv__wrapper">
+              <img src="img/adv_2.jpg" alt="" class="adv__img adv__img_2">
+            </div>
+          </div>
+          <hr class='adv__video-line'>
+          <span class="adv__video-text">High-level Skills</span>
+        </div>
+        <div class="col-sm-4 col-md-4 col-lg-3 col-xl-3 adv__centered mobile_row">
+          <div class="adv__container">
+            <div class="adv__wrapper">
+              <img src="img/adv_3.jpg" alt="" class="adv__img adv__img_3">
+            </div>
+          </div>
+          <hr class='adv__video-line'>
+          <span class="adv__video-text">Quality Products</span>
+        </div>
+      </div>
+    </section>
+    <script>
+
+    </script>
   </body>
 </html>
