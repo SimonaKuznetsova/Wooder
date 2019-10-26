@@ -1,12 +1,19 @@
+.main{
+    overflow-x: hidden;
+}
 .main .container{
     padding-top: 90px;
 }
 .main__second{
-    padding-top: 60px;
+    padding-top: 180px;
 }
 
 .main__img{
     max-width: 540px;
+}
+
+.img-shadow{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 h4{
@@ -21,6 +28,13 @@ h4{
     line-height: 25px;
     margin-bottom: 20px;
     font-family: 'ProximaNova-Regular', sans-serif;
+}
+
+.main__first{
+    .main__text{
+        //overflow-x: hidden;
+        z-index: 2;
+    }
 }
 
 .main__text{

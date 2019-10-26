@@ -23,7 +23,7 @@
     background-image: url(../img/button-arrow.svg);
     color: #111111;
 
-    transition: .4s;
+    transition: all 0.3s ease 0s;
     transform: scale(1.06);
   }
 
@@ -31,4 +31,15 @@
     transform: scale(0.9);
   }
 
+}
+
+.profy__button{
+  background-image: url('../img/play-white.svg');
+  background-size: 10%;
+  background-position: 45px center;
+  padding-left: 75px;
+  &:hover,
+  &:active{
+    background-image: url('../img/play-black.svg');
+  }
 }
